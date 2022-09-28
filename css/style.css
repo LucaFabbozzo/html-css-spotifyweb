@@ -11,3 +11,45 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+img {
+  width: 100%;
+}
+
+/* utilities */
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-items {
+  align-items: center;
+}
+
+
+.debug {
+  background-color: rgba(134, 132, 132, 0.707);
+  border: 1px solid red;
+  width: 200px;
+  height: 70px;
+}
+
+
+
+/* footer */
+
+footer {
+  height: 90px;
+  background-color: #282828;
+}
+
