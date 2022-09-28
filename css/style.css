@@ -115,7 +115,7 @@ img {
 
 header {
   display: fixed;
-  width: 100%;
+  width: 100vw;
   height: 90px;
   background-color: #080A13;
 }
@@ -123,6 +123,11 @@ header {
 header img {
   width: 130px;
   cursor: pointer;
+}
+
+header img.small {
+  display: none;
+  width: 30px;
 }
 
 header .btn {
@@ -241,13 +246,17 @@ footer .box.right:last-child::after {
 
 /* xs */
 
-@media screen and (max-width: 480px){
-  .bar {
-    width: 45px;
+@media screen and (max-width: 630px){
+  main .bar {
+    width: 50px;
   }
 
-  .logo {
-    width: 20px;
+  header img {
+    display: none;
+  }
+
+  header img.small {
+    display: inline-block;
   }
 }
 
