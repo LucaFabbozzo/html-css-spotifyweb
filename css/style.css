@@ -56,6 +56,10 @@ img {
   color: #7B7B82;
 }
 
+.pad-lft { 
+  padding-left: 10px;
+}
+
 
 /* header  */
 
@@ -91,6 +95,16 @@ footer {
   height: 90px;
   background-color: #282828;
 }
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+footer p.co-g {
+  font-size: 0.6rem;
+}
+
 
 footer .box img {
   width: 40px;
