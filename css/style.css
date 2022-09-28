@@ -82,3 +82,25 @@ footer {
   background-color: #282828;
 }
 
+
+
+
+
+
+/***********************/
+/**** RESPONSIVE *******/
+/***********************/
+
+
+/* xs */
+
+@media screen and (max-width: 480px){
+  .bar {
+    width: 45px;
+  }
+  
+  .logo {
+    width: 20px;
+  }
+}
+
