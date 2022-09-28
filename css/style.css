@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  width: 100%;
+  height: 100%;
 }
 
 /* utilities */
@@ -44,6 +44,18 @@ img {
   height: 70px;
 }
 
+.block {
+  display: inline-block;
+}
+
+.co-w {
+  color: #FFFFFF;
+}
+
+.co-g {
+  color: #7B7B82;
+}
+
 
 /* header  */
 
@@ -51,9 +63,7 @@ header {
   display: fixed;
   width: 100%;
   height: 90px;
-  background-color: #070b12;
-  overflow: auto;
-
+  background-color: #000000;
 }
 
 /* bar */
@@ -82,6 +92,21 @@ footer {
   background-color: #282828;
 }
 
+footer .box img {
+  width: 40px;
+}
+
+footer .box.left,
+footer .box.right {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+footer .box.center {
+  width: 30%;
+}
+
+
 
 
 
@@ -98,7 +123,7 @@ footer {
   .bar {
     width: 45px;
   }
-  
+
   .logo {
     width: 20px;
   }
