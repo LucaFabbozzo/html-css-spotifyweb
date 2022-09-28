@@ -60,6 +60,21 @@ img {
   height: 70px;
 }
 
+.btn {
+  padding: 10px 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
 .block {
   display: inline-block;
 }
@@ -102,12 +117,27 @@ header {
   display: fixed;
   width: 100%;
   height: 90px;
-  background-color: #000000;
+  background-color: #080A13;
 }
 
-/* bar */
+header img {
+  width: 130px;
+  cursor: pointer;
+}
 
-.bar {
+header .btn {
+  transition: all 0.3s;
+}
+
+header .btn:hover {
+  transform: scale(1.10, 1.10);
+}
+
+
+/* main */
+
+
+main .bar {
   height: calc(100vh - 180px);
   width: 225px;
   background-color: #000000;
@@ -115,18 +145,10 @@ header {
   overflow: hidden;
 }
 
-.content {
+main .content {
   overflow-y: scroll;
   height: calc(100vh - 180px);
 }
-
-/* main */
-
-main {
-  height: calc(100vh - 180px);
-  overflow: auto;
-}
-
 
 /* footer */
 
