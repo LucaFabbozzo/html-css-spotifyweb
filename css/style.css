@@ -32,6 +32,10 @@ img {
   justify-content: space-between;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .align-items {
   align-items: center;
 }
@@ -58,6 +62,10 @@ img {
 
 .pad-lft { 
   padding-left: 10px;
+}
+  
+.ft-size {
+  font-size: 0.9rem;
 }
 
 
@@ -118,6 +126,15 @@ footer .box.right {
 
 footer .box.center {
   width: 30%;
+}
+
+footer .box.right:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
 }
 
 
