@@ -89,6 +89,11 @@ h5 {
 }
 
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+
 .block {
   display: inline-block;
 }
@@ -103,6 +108,10 @@ h5 {
 
 .pad-lft { 
   padding-left: 10px;
+}
+
+.pad-lft5 {
+  padding-left: 5px;
 }
 
 .pad-right {
@@ -138,7 +147,7 @@ h5 {
 }
 
 .ft-sizel {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .w-100 {
@@ -153,12 +162,17 @@ h5 {
   overflow: auto;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .card{
   cursor: pointer;
   width: 200px;
   padding: 10px;
   text-align: center;
 }
+
 
 
 /* main */
@@ -184,15 +198,16 @@ main .bar {
 }
 
 main .bar i {
-  padding-right: 2px;
+  padding-right: 3px;
   font-size: 1rem;
 }
 
 main #home,
 main #playlist,
 main #install-app {
- font-size: 0.8rem;
+ font-size: 0.7rem;
 }
+
 
 
 #home ul li {
@@ -204,8 +219,18 @@ main #install-app {
  padding-bottom: 10px;
 }
 
-main .bar .d-flex .top {
-  max-height: 50%;
+#playlist i {
+  font-size: 2rem;
+}
+
+#install-app .top::after {
+  content: '';
+  display: inline-block;
+  width: 90%;
+  height: 1px;
+  background-color: #7B7B82;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* content */
@@ -389,7 +414,7 @@ footer .box.right:last-child::after {
   width: 100px;
   height: 4px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #7B7B82;
 }
 
 
