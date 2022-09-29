@@ -14,6 +14,7 @@ body {
 
 img {
   width: 100%;
+  object-fit: cover;
 }
 
 h4 {
@@ -147,9 +148,7 @@ h5 {
 
 .card{
   cursor: pointer;
-  display: inline-block;
-  width: calc(100% / 6);
-  aspect-ratio: 1 / 1;
+  width: 200px;
   padding: 10px;
   text-align: center;
 }
@@ -344,6 +343,15 @@ footer .box.left .s-column-resp {
 
 /* footer center  */
 
+footer i {
+  cursor: pointer;
+}
+
+footer .box.left .items .fa-heart:hover,
+footer .box.left .items .fa-folder:hover {
+  color: #FFFFFF;
+}
+
 footer .box.center {
   width: 540px;
 }
@@ -354,6 +362,10 @@ footer .box.center .bottom .vol-bar-center {
   height: 4px;
   border-radius: 10px;
   background-color: #7B7B82;
+}
+
+footer .box.center .top:hover i.scale {
+ transform: scale(1.20, 1.20);
 }
 
 footer .box.center .items {
@@ -383,6 +395,18 @@ footer .box.right:last-child::after {
 /**** RESPONSIVE *******/
 /***********************/
 
+/* m */
+@media screen and (max-width:  1000px){
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .content .menu nav ul {
+    flex-wrap: wrap;
+  }
+
+}
+
 /* s */
 @media screen and (max-width: 700px){
   .s-column-resp {
@@ -397,6 +421,10 @@ footer .box.right:last-child::after {
 @media screen and (max-width: 630px){
   main .bar {
     width: 50px;
+  }
+
+  main .content .top-bar {
+    width: calc(100% - 50px);
   }
 
   main img {
