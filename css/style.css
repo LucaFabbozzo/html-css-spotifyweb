@@ -145,6 +145,13 @@ h5 {
   width: 100%;
 }
 
+.h-100 {
+  height: 100%;
+}
+
+.overflow {
+  overflow: auto;
+}
 
 .card{
   cursor: pointer;
@@ -165,10 +172,6 @@ main .bar #logo img {
   cursor: pointer;
 }
 
-main img.small {
-  display: none;
-  width: 30px;
-}
 
 main .bar {
   height: calc(100vh - 90px);
@@ -191,9 +194,6 @@ main #install-app {
  font-size: 0.8rem;
 }
 
-#home {
-  height: 100px;
-}
 
 #home ul li {
   padding-bottom: 5px;
@@ -202,6 +202,10 @@ main #install-app {
 #playlist nav ul li {
  list-style: none;
  padding-bottom: 10px;
+}
+
+main .bar .d-flex .top {
+  max-height: 50%;
 }
 
 /* content */
@@ -265,6 +269,7 @@ main .content {
 
 .content .menu nav ul li a:hover {
   color: #FFFFFF;
+  border-bottom: 2px solid #ADFF2E;
 }
 
 
@@ -431,8 +436,5 @@ footer .box.right:last-child::after {
     display: none;
   }
 
-  main img.small {
-    display: inline-block;
-  }
 }
 
