@@ -16,6 +16,18 @@ img {
   width: 100%;
 }
 
+h4 {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h5 {
+  color: #7B7B82;
+  font-size: 0.7rem;
+}
+
 /* utilities */
 
 .container {
@@ -75,20 +87,6 @@ img {
   height: 70px;
 }
 
-.btn {
-  padding: 10px 30px;
-  border: 1px solid #FFFFFF;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.btn a {
-  text-decoration: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: bold;
-}
 
 .block {
   display: inline-block;
@@ -152,7 +150,6 @@ img {
   width: calc(100% / 6);
   aspect-ratio: 1 / 1;
   padding: 10px;
-  background-color: aqua;
   text-align: center;
 }
 
@@ -225,31 +222,87 @@ main .content {
   
 }
 
-main .content .top-bar{
+.content .top-bar{
   position: fixed;
   width: 100%;
   height: 90px;
   background-color: rgba(8, 10, 19, 0.8);
 }
 
-main .content .menu nav ul {
+.content .top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.content .top-bar .btn {
+  padding: 10px 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+}
+
+.content .menu nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-main .content .menu nav ul li {
+.content .menu nav ul li {
   margin: 10px;
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-main .content .menu nav ul li a {
+.content .menu nav ul li a {
   text-decoration: none;
   color: #7B7B82;
 }
 
+.content .menu nav ul li a:hover {
+  color: #FFFFFF;
+}
+
+
+.content #popular .row .card img {
+  border-radius: 50%;
+}
+
+.content .img-over {
+  position: relative;
+}
+
+.content .row .card .img-over:hover .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.content .img-over:hover i.over {
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* section h3{
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}  */
 
 /* footer */
 
@@ -338,6 +391,7 @@ footer .box.right:last-child::after {
      flex-direction: column;
      align-items: center;
   }
+
 }
 
 /* xs */
