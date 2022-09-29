@@ -153,15 +153,6 @@ h5 {
   text-align: center;
 }
 
-/* 
-header .btn {
-  transition: all 0.3s;
-}
-
-header .btn:hover {
-  transform: scale(1.10, 1.10);
-} */ 
-
 
 /* main */
 
@@ -224,22 +215,34 @@ main .content {
 
 .content .top-bar{
   position: fixed;
-  width: 100%;
+  width: calc(100% - 225px);
   height: 90px;
   background-color: rgba(8, 10, 19, 0.8);
+  justify-content: flex-end;
 }
 
-.content .top-bar a {
+
+.content .top-bar .btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 20px;
+  transition: all 0.3s;
+}
+
+.content .top-bar .btn a{
+  text-transform: uppercase;
   color: white;
   text-decoration: none;
   font-size: 0.7rem;
 }
 
-.content .top-bar .btn {
-  padding: 10px 25px;
-  border: 1px solid #FFFFFF;
-  border-radius: 20px;
-}
+
+.content .top-bar .btn:hover {
+  transform: scale(1.10, 1.10);
+} 
 
 .content .menu nav ul {
   display: flex;
@@ -281,7 +284,13 @@ main .content {
   background-color: rgba(0, 0, 0, .4);
 }
 
+.content .img-over i.over {
+  display: none;
+}
+
+
 .content .img-over:hover i.over {
+  display: inline-block;
   font-size: 2.5rem;
   color: white;
   position: absolute;
@@ -290,19 +299,6 @@ main .content {
   transform: translate(-50%, -50%);
 }
 
-
-
-/* section h3{
-  position: absolute;
-  color: white;
-  font-size: 100px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 5px 5px 5px black;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}  */
 
 /* footer */
 
