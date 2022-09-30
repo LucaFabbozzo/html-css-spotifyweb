@@ -465,6 +465,7 @@ footer .box.center .bottom .over{
 }
 
 footer .box.center .bottom .over .overlay{
+  cursor: pointer;
   position: absolute;
   width: 40%;
   height: 100%;
@@ -472,6 +473,10 @@ footer .box.center .bottom .over .overlay{
   top: 0;
   left: 0;
   background-color: #FFFFFF;
+}
+
+footer .box.center .bottom .over .overlay:hover {
+  background-color: #ADFF2E;
 }
 
 footer .box.center .bottom .over i {
