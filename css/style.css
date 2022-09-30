@@ -459,16 +459,36 @@ footer .box.center .bottom .vol-bar-center {
 footer .box.center .bottom .over{
   position: relative;
   width: 100%;
+  margin: 0 15px;
 }
 
 footer .box.center .bottom .over .overlay{
   position: absolute;
   width: 40%;
   height: 100%;
+  border-radius: 10px;
   top: 0;
   left: 0;
-  background-color: #ADFF2E;
+  background-color: #FFFFFF;
 }
+
+footer .box.center .bottom .over i {
+  display: none;
+}
+
+footer .box.center .bottom .over:hover i {
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* .content .img-over:hover i.over {
+ 
+} */
 
 
 footer .box.center .top:hover i.scale {
