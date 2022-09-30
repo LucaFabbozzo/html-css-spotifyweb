@@ -179,14 +179,6 @@ h5 {
 
 /* bar */
 
-main .bar #logo img {
-  width: 90px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  cursor: pointer;
-}
-
-
 main .bar {
   height: calc(100vh - 90px);
   width: 225px;
@@ -197,9 +189,24 @@ main .bar {
   justify-content: space-between;
 }
 
+/* bar items */
+
+main .bar #logo img {
+  width: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+
 main .bar i {
   padding-right: 3px;
   font-size: 1rem;
+}
+
+main .bar i:hover {
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 main #home,
@@ -214,9 +221,30 @@ main #install-app {
   padding-bottom: 5px;
 }
 
-#playlist nav ul li {
+#home ul li span:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.list-play {
+  height: 45%;
+  overflow: auto;
+}
+
+.list-play nav ul li {
  list-style: none;
  padding-bottom: 10px;
+ font-size: 0.8rem;
+}
+
+.list-play nav ul li:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#playlist .hover:hover {
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 #playlist i {
@@ -232,6 +260,12 @@ main #install-app {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+#install-app .hover:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 
 /* content */
 
@@ -457,9 +491,6 @@ footer .box.right:last-child::after {
     width: calc(100% - 50px);
   }
 
-  main img {
-    display: none;
-  }
 
 }
 
