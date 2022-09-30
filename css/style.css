@@ -347,7 +347,7 @@ main .content {
 .content .menu nav ul li a {
   text-decoration: none;
   color: #7B7B82;
-  transition: border-bottom 1s;
+  transition: border-bottom 0.1s;
 }
 
 .content .menu nav ul li a:hover {
@@ -356,7 +356,7 @@ main .content {
 
 .content .menu nav ul li a:active{
   transform: scale(1.10, 1.10);
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   border-bottom: 2px solid #ADFF2E;
 }
 
@@ -485,10 +485,6 @@ footer .box.center .bottom .over:hover i {
   left: 40%;
   transform: translate(-50%, -50%);
 }
-
-/* .content .img-over:hover i.over {
- 
-} */
 
 
 footer .box.center .top:hover i.scale {
