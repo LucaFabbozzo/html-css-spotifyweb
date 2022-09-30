@@ -191,6 +191,12 @@ main .bar {
 
 /* bar items */
 
+main .bar .items-small {
+  display: none;
+  width: 30px;
+  height: 100%;
+}
+
 main .bar #logo img {
   width: 90px;
   padding-top: 20px;
@@ -483,6 +489,11 @@ footer .box.right:last-child::after {
 /* xs */
 
 @media screen and (max-width: 630px){
+
+  .container-content {
+    width: 75%;
+  }
+
   main .bar {
     width: 50px;
   }
@@ -490,6 +501,26 @@ footer .box.right:last-child::after {
   main .content .top-bar {
     width: calc(100% - 50px);
   }
+
+  main .bar .items {
+    display: none;
+  }
+
+  main #logo {
+    display: none;
+  }
+
+  main .bar .items-small {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+
 
 
 }
