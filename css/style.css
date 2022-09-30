@@ -177,8 +177,6 @@ h5 {
   text-align: center;
 }
 
-
-
 /* main */
 
 /* bar */
@@ -293,7 +291,6 @@ main #install-app {
   cursor: pointer;
 }
 
-
 /* content */
 
 main .content {
@@ -396,7 +393,6 @@ main .content {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 /* footer */
 
@@ -619,9 +615,14 @@ footer .box.right .over:hover i {
     cursor: pointer;
   }
 
+  main .bar .items-small img:hover {
+    filter: invert(40%);
+  }
+
   main .bar .items-small .bottom {
     filter: invert(60%);
     width: 75%;
   }
+
 }
 
