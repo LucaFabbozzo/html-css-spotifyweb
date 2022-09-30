@@ -449,6 +449,8 @@ footer .box.center {
   width: 540px;
 }
 
+/* volume bar overlay center */
+
 footer .box.center .bottom .vol-bar-center {
   width: 100%;
   height: 4px;
@@ -501,8 +503,10 @@ footer .box.right {
   margin-left: 20px;
 }
 
-footer .box.right:last-child::after {
-  content: '';
+
+/* volume bar overlay right */
+
+footer .box.right .vol-bar-right {
   display: inline-block;
   width: 75px;
   height: 4px;
@@ -511,6 +515,35 @@ footer .box.right:last-child::after {
 }
 
 
+footer .box.right .over{
+  position: relative;
+  width: 100%;
+  margin: 0 15px;
+}
+
+footer .box.right .over .overlay{
+  position: absolute;
+  width: 40%;
+  height: 34%;
+  border-radius: 10px;
+  top: 9px;
+  left: 0;
+  background-color: #FFFFFF;
+}
+
+footer .box.right .over i {
+  display: none;
+}
+
+footer .box.right .over:hover i {
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 66%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
 
 
 
