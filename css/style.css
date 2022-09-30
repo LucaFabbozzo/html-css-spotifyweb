@@ -221,7 +221,15 @@ main #install-app {
  font-size: 0.7rem;
 }
 
+#home img {
+  width: 25px;
+  padding-right: 5px;
+}
 
+#home img:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
 
 #home ul li {
   padding-bottom: 5px;
@@ -330,10 +338,16 @@ main .content {
 .content .menu nav ul li a {
   text-decoration: none;
   color: #7B7B82;
+  transition: border-bottom 1s;
 }
 
 .content .menu nav ul li a:hover {
   color: #FFFFFF;
+}
+
+.content .menu nav ul li a:active{
+  transform: scale(1.10, 1.10);
+  padding-bottom: 2px;
   border-bottom: 2px solid #ADFF2E;
 }
 
