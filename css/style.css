@@ -224,11 +224,20 @@ main #install-app {
 #home img {
   width: 25px;
   padding-right: 5px;
+  filter: invert(50%);
+}
+
+#home img:hover {
+  filter: invert(0%);
 }
 
 #home img:hover {
   color: #FFFFFF;
   cursor: pointer;
+}
+
+ #home ul li:active {
+  border-left: 1px solid #ADFF2E;
 }
 
 #home ul li {
@@ -441,12 +450,26 @@ footer .box.center {
 }
 
 footer .box.center .bottom .vol-bar-center {
-  margin: 0 25px;
   width: 100%;
   height: 4px;
   border-radius: 10px;
   background-color: #7B7B82;
 }
+
+footer .box.center .bottom .over{
+  position: relative;
+  width: 100%;
+}
+
+footer .box.center .bottom .over .overlay{
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ADFF2E;
+}
+
 
 footer .box.center .top:hover i.scale {
  transform: scale(1.20, 1.20);
@@ -465,7 +488,7 @@ footer .box.right {
 footer .box.right:last-child::after {
   content: '';
   display: inline-block;
-  width: 100px;
+  width: 75px;
   height: 4px;
   border-radius: 10px;
   background-color: #7B7B82;
@@ -490,6 +513,14 @@ footer .box.right:last-child::after {
   }
 
 }
+
+@media screen and (max-width: 865px){
+  .container-content {
+    width: 70%;
+  }
+}
+
+
 
 /* s */
 @media screen and (max-width: 700px){
@@ -535,7 +566,9 @@ footer .box.right:last-child::after {
     cursor: pointer;
   }
 
-
-
+  main .bar .items-small .bottom {
+    filter: invert(60%);
+    width: 75%;
+  }
 }
 
