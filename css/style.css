@@ -150,6 +150,10 @@ h5 {
   font-size: 1.8rem;
 }
 
+.w-200px {
+  width: 200px;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -506,6 +510,7 @@ footer .box.right {
 
 /* volume bar overlay right */
 
+
 footer .box.right .vol-bar-right {
   display: inline-block;
   width: 75px;
@@ -518,7 +523,6 @@ footer .box.right .vol-bar-right {
 footer .box.right .over{
   position: relative;
   width: 100%;
-  margin: 0 15px;
 }
 
 footer .box.right .over .overlay{
